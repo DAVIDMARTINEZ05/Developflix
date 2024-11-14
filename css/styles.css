@@ -2,17 +2,44 @@
 body {
   font-family: Arial, sans-serif;
 }
-
+ img{
+  width: 150px;
+  height: 200px;
+ }
 .genero-container {
   margin: 20px;
   padding: 20px;
   border: 1px solid #ccc;
   background-color: #f8f8f8;
+ 
 }
-
+h1{
+  text-align: center;
+}
 h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  text-align: center;
 }
 
+.movies-container{
 
+  display:flex;
+  flex-wrap: wrap;
+  gap:20px;
+
+}
+h3{
+  font-size: 1rem; /* Ajusta según lo necesario */
+  flex-grow: 1;     /* Permite que el título crezca dentro del contenedor */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 250px; /* El contenedor nunca será más grande que 250px */
+}
